@@ -1,10 +1,8 @@
-# vueAdmin-template
+# vue_fashionComm_admin
 
-> A minimal vue admin template with Element UI & axios & iconfont & permission control & lint
+> 这是一个 极简的用VUE 搭建的非常康健身管理后台 它包含了 Element UI & axios & iconfont & permission control & lint，这些搭建后台必要的东西。
 
-**Live demo:** http://panjiachen.github.io/vueAdmin-template
-
-[中文文档](https://github.com/PanJiaChen/vueAdmin-template/blob/master/README-zh.md)
+**DEMO地址:** https://119992278.github.io/vue_fashionComm_admin/
 
 ## Build Setup
 
