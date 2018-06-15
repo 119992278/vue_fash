@@ -13,9 +13,9 @@ const service = axios.create({
 service.interceptors.request.use(config => {
     if (getToken('token')) {
         config.headers['accessToken'] = getToken('token'), // 让每个请求携带自定义token
-            config.headers['accessSeq'] = new Date().getTime(),
-            config.headers['accountId'] = getToken('AccountId'),
-            config.headers['clubId'] = getToken('ClubId')
+        config.headers['accessSeq'] = new Date().getTime(),
+        config.headers['accountId'] = getToken('AccountId'),
+        config.headers['clubId'] = getToken('ClubId')
     }
     return config
 }, error => {

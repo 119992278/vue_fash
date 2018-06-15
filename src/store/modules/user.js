@@ -49,7 +49,7 @@ const user = {
                     let userRoleInfo = response.userRoleInfo
                     localStorage.setItem("userRoleInfo", JSON.stringify(userRoleInfo))
                     setToken('AccountId', response.userRoleInfo.accountId);
-                    //setToken('ClubId', response.userRoleInfo.clubId)
+                    setToken('ClubId', response.userRoleInfo.clubId)
                     setToken('IconUrl', response.iconUrl)
                         // commit('SET_NAME', response.userName)
                         //commit('SET_ACCOUNT', response.userRoleInfo.accountId)

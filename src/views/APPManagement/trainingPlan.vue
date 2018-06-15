@@ -183,4 +183,7 @@ export default {
 .el-dialog__body {
   padding: 10px 20px;
 }
+.el-table .cell svg {
+  color: #f7b100;
+}
 </style>

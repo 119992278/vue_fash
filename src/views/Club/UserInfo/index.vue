@@ -3,11 +3,6 @@
     <div class="dashboard-text">clubName:{{clubName}}</div>
     <div class="dashboard-text">roleCodeStr:{{roleCodeStr}}</div>
     <div class="dashboard-text">account_Id:{{accountId}}</div>
-  <children>  
-        <span slot="first" @click="tobeknow"></span>  
-        <span slot="second">56789</span>  
-        <!--上面这行不会显示-->  
-    </children>  
   </div>
 </template>
 
@@ -18,11 +13,6 @@ export default {
   name: "dashboard",
   computed: {},
   components: {
-    children: {
-      //这个无返回值，不会继续派发
-      template:
-        "<button><slot name='first'></slot>为了明确作用范围，<slot name='second'></slot>所以使用button标签</button>"
-    }
   },
   data() {
     return {

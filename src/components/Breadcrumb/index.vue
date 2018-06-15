@@ -27,13 +27,12 @@ export default {
   methods: {
     getBreadcrumb() {
       //设置顶部导航.
-      console.log(this.$route.matched);
       let matched = this.$route.matched.filter(item => item.name);
       const first = matched[0];
-      if (first && first.name !== "userInfo") {
-        //matched = [{ path: '/userInfo', meta: { title: '人员管理' }}].concat(matched)
-      }
-
+      // if (first && first.name !== "userInfo") {
+      //   matched = [{ path: '/userInfo', meta: { title: '人员管理' }}].concat(matched)
+      // }
+      console.log(this.$route.matched);
       this.levelList = matched;
     }
   }

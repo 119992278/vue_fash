@@ -85,18 +85,17 @@ export const constantRouterMap = [{
                     import ('@/views/PeopleManagement/member'),
                 meta: { title: '会员管理' }
             }, {
+                path: 'card',
+                name: '卡种管理',
+                component: () =>
+                    import ('@/views/PeopleManagement/card'),
+                meta: { title: '卡种管理' }
+            }, {
                 path: 'worker',
                 name: '工作人员',
                 component: () =>
                     import ('@/views/PeopleManagement/worker'),
                 meta: { title: '工作人员' }
-            },
-            {
-                path: 'worker1',
-                name: '工作人员1',
-                component: () =>
-                    import ('@/views/PeopleManagement/worker1'),
-                meta: { title: '工作人员1' }
             },
             {
                 path: 'all',
